@@ -3,6 +3,7 @@ import { GlobalStyle } from './styles/global'
 import { SearchBar } from './components/SearchBar'
 import { Container } from './styles/Home'
 import { User } from './components/User'
+import { ReposList } from './components/ReposList'
 
 function App() {
   /*const user = {
@@ -19,6 +20,7 @@ function App() {
     <Container>
       <SearchBar setUser={setUser} setUserRepos={setUserRepos} />
       { user && <User user={user} userRepos={userRepos} />}
+      <ReposList />
       <GlobalStyle />
     </Container>
   )
