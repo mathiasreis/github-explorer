@@ -13,11 +13,12 @@ function App() {
   }*/
 
   const [user, setUser] = useState()
+  const [userRepos, setUserRepos] = useState();
 
   return (
     <Container>
-      <SearchBar setUser={setUser} />
-      { user.id && <User user={user} />}
+      <SearchBar setUser={setUser} setUserRepos={setUserRepos} />
+      { user && <User user={user} userRepos={userRepos} />}
       <GlobalStyle />
     </Container>
   )
